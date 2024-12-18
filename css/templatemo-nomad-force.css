@@ -412,6 +412,17 @@ strong {
   padding: 22px 32px 32px 32px;
 }
 
+.about-background {
+  position: absolute; /* Hace que la imagen no afecte el flujo del documento */
+  
+  left: 0px; /* Sobresale hacia la izquierda */
+  z-index: -1; /* Aparece detrás del contenido */
+  width: 35%; /* Ajusta el tamaño de la imagen según tus necesidades */
+  opacity: 0.8; /* Opcional: da un efecto de transparencia */
+  transform: translate(-300px, -100px);
+   /* Empuja más hacia la izquierda */ /* Empuja más hacia la izquierda */
+}
+
 .carousel-control-next, 
 .carousel-control-prev {
   top: auto;
@@ -791,7 +802,7 @@ strong {
 
 .features .features-item img {
   border: 6px solid var(--surface-color);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); */
 }
 
 .features .features-item .features-img-bg {
@@ -833,6 +844,8 @@ strong {
   margin-top: 30%;
   width: 100%;
   z-index: 2;
+  border: 8px solid #a8927d; /* Borde de 2 píxeles, color blanco */
+  border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
 }
 
 /*--------------------------------------------------------------
