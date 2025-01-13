@@ -366,7 +366,7 @@ strong {
   .news-detail-image {
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 112vh;
   }
 
   .sticky-wrapper {
@@ -455,6 +455,76 @@ strong {
   margin: 20px;
 }
 
+/*---------------------------------------
+  STICKERS               
+-----------------------------------------*/
+
+/* Estilo para la imagen tipo sticker */
+.sticker-img {
+  position: relative;
+  top: 170%; /* Centrado vertical */
+  left: -20%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Asegura que la imagen esté centrada */
+  opacity: 0.4; /* Transparencia */
+  pointer-events: none; /* Evita que la imagen interfiera con los clics en otros elementos */
+  z-index: 0; /* Coloca la imagen detrás del contenido */
+  width: 15vw; /* Ajuste responsivo según el tamaño de la ventana */
+  height: auto; /* Mantiene la relación de aspecto */
+  animation: stickerAnimation 5s infinite; /* Animación que se repite */
+}
+
+.sticker-img2 {
+  position: absolute;
+  top: 270%; /* Centrado vertical */
+  left: 90%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Asegura que la imagen esté centrada */
+  opacity: 0.4; /* Transparencia */
+  pointer-events: none; /* Evita que la imagen interfiera con los clics en otros elementos */
+  z-index: 0; /* Coloca la imagen detrás del contenido */
+  width: 10vw; /* Ajuste responsivo según el tamaño de la ventana */
+  height: auto; /* Mantiene la relación de aspecto */
+  animation: stickerAnimation 5s infinite; /* Animación que se repite */
+}
+
+.sticker-img3 {
+  position: absolute;
+  top: 335%; /* Centrado vertical */
+  left: 10%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Asegura que la imagen esté centrada */
+  opacity: 0.2; /* Transparencia */
+  pointer-events: none; /* Evita que la imagen interfiera con los clics en otros elementos */
+  z-index: 0; /* Coloca la imagen detrás del contenido */
+  width: 10vw; /* Ajuste responsivo según el tamaño de la ventana */
+  height: auto; /* Mantiene la relación de aspecto */
+  animation: stickerAnimation 5s infinite; /* Animación que se repite */
+}
+
+.sticker-img4 {
+  position: absolute;
+  top: 390%; /* Centrado vertical */
+  left: 80%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Asegura que la imagen esté centrada */
+  opacity: 0.2; /* Transparencia */
+  pointer-events: none; /* Evita que la imagen interfiera con los clics en otros elementos */
+  z-index: 1; /* Coloca la imagen detrás del contenido */
+  width: 20vw; /* Ajuste responsivo según el tamaño de la ventana */
+  height: auto; /* Mantiene la relación de aspecto */
+  animation: stickerAnimation 5s infinite; /* Animación que se repite */
+}
+
+
+/* Animación para la imagen */
+@keyframes stickerAnimation {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+      transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
 /*---------------------------------------
   NEWS & EVENTS               
 -----------------------------------------*/
@@ -820,7 +890,7 @@ strong {
   position: absolute;
   inset: 0;
   display: block;
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
 }
@@ -844,7 +914,7 @@ strong {
   margin-top: 30%;
   width: 100%;
   z-index: 2;
-  border: 8px solid #a8927d; /* Borde de 2 píxeles, color blanco */
+  border: 8px solid #45352e; /* Borde de 2 píxeles, color blanco */
   border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
 }
 
